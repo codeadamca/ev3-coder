@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EV3 Coder</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="access-ev3.js"></script>
+    
+    <main class="w3-container w3-center w3-margin-top">
+        
+        <h1>EV3 Coder</h1>
+        <input type="text" placeholder="ip address" class="w3-input w3-border w3-margin-bottom w3-center">
+        <div id="editor"></div>
+        <button id="execute" class="w3-button w3-green w3-margin-top">Execute Code</button>
+        <br>
+        <button id="left" class="w3-button w3-pink w3-margin-top w3-margin-right">left();</button>
+        <button id="right" class="w3-button w3-pink w3-margin-top w3-margin-right">right();</button>
+        <button id="forward" class="w3-button w3-pink w3-margin-top w3-margin-right">forward();</button>
+        <button id="backward" class="w3-button w3-pink w3-margin-top w3-margin-right">backward();</button>
+        <button id="custom" class="w3-button w3-pink w3-margin-top">custom(right,left,time);</button>
+        
+    </main>
+        
+    <script>
+        
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/monokai");
+    editor.getSession().setMode("ace/mode/javascript");
+    document.getElementById('editor').style.fontSize='12px';
+    document.getElementById('editor').style.height='400px';
+        
+    var url = '';
+    var counter = 0;
+    var code = '';
+    
+    $(document).ready(function(){
+        
+        $('#execute').click(function(){
+           
+            counter = 0;
+            url = 'http://'+$('input').val()+'/api.php';
+            code = editor.getValue().split(/\s/g);
+
+            var clean = new Array();
+            for( i = 0; i < code.length; i++ )
+              if( code[i] ) clean.push( code[i] );
+            
+            code = clean;
+            next();
+            
+        });
+        
+        $('button:not(#execute').click(function(){
+        
+            editor.setValue( editor.getValue() + $(this).html() + '\n' );
+                          
+        });
+        
+    });
+        
+    function next()
+    {
+        
+        if( code[counter] )
+        {
+            eval( code[counter] );
+            setTimeout( next, 2500 );
+            counter ++;
+        }
+        
+    }
+    
+    </script>
+    
+</body>
+</html>
