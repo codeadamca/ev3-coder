@@ -11,7 +11,12 @@ https://pages.codeadam.ca/ev3-coder/
 ## Requirements:
 
 * [LEGO&trade; EV3](https://www.lego.com/en-ca/product/lego-mindstorms-ev3-31313) 
-* [ev3dev](https://www.ev3dev.org/) 
+
+[![YouTube Badge](https://img.shields.io/badge/-@Dhruv%20Jain-c4302b?style=flat-square&labelColor=c4302b&logo=youtube&logoColor=white&link=https://www.youtube.com/channel/UCQXt2DMbgcjO5xpAd0cFS8A)](https://www.youtube.com/channel/UCQXt2DMbgcjO5xpAd0cFS8A)
+
+[![YouTube Badge](https://img.shields.io/badge/-@Dhruv%20Jain-c4302b?style=flat-square&labelColor=c4302b&logo=youtube&logoColor=white&link=https://www.youtube.com/channel/UCQXt2DMbgcjO5xpAd0cFS8A)](https://www.youtube.com/channel/UCQXt2DMbgcjO5xpAd0cFS8A)
+
+[![YouTube Badge](https://img.shields.io/badge/-@Dhruv%20Jain-c4302b?style=flat-square&labelColor=c4302b&logo=youtube&logoColor=white&link=https://www.youtube.com/channel/UCQXt2DMbgcjO5xpAd0cFS8A)](https://www.youtube.com/channel/UCQXt2DMbgcjO5xpAd0cFS8A)
 
 <a href="https://codeadam.ca">
 <img src="https://codeadam.ca/images/code-block.png" width="100">
