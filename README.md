@@ -1,4 +1,4 @@
-# LEGO Mindstorms EV3 Coder Tool
+# LEGO® Mindstorms® EV3 Coder Tool
 
 An online tool to add basic commands to an EV3 robot. Device must be on the same wifi network as the EV3 robots. 
 
