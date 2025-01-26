@@ -13,6 +13,7 @@ An online tool to add basic commands to an EV3 robot. Device must be on the same
 
 - [LEGO EV3](https://www.lego.com/en-ca/product/lego-mindstorms-ev3-31313)
 
+<br>
 <a href="https://codeadam.ca">
-<img src="https://codeadam.ca/images/code-block.png" width="100">
+<img src="https://cdn.codeadam.ca/images@1.0.0/codeadam-logo-coloured-horizontal.png" width="200">
 </a>
